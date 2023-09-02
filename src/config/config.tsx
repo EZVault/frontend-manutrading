@@ -587,7 +587,7 @@ export const config: Record<ChainConfig['id'], Omit<ChainConfig, 'id'>> = {
   zksync: {
     name: 'zkSync',
     chainId: 324,
-    rpc: ['https://mainnet.era.zksync.io'],
+    rpc: ['https://zksync.meowrpc.com'],
     explorerUrl: 'https://explorer.zksync.io',
     explorerTokenUrlTemplate: 'https://explorer.zksync.io/address/{address}',
     multicallAddress: '0x1E9231Cc9782D9F8e213736F6dAC00020D8271cB',
@@ -601,7 +601,7 @@ export const config: Record<ChainConfig['id'], Omit<ChainConfig, 'id'>> = {
         symbol: 'ETH',
         decimals: 18,
       },
-      rpcUrls: ['https://mainnet.era.zksync.io'],
+      rpcUrls: ['https://zksync.meowrpc.com'],
       blockExplorerUrls: ['https://explorer.zksync.io/'],
     },
     gas: {
