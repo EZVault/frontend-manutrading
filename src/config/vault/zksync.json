@@ -79,9 +79,9 @@
     "tokenDecimals": 18,
     "tokenProviderId": "vesync",
     "tokenAmmId": "zksync-vesync",
-    "earnedToken": "mooveSyncETH-USDC",
-    "earnedTokenAddress": "0xFB153dd6CB2DE5219B36b8c95F2c528A34E2912B",
-    "earnContractAddress": "0xFB153dd6CB2DE5219B36b8c95F2c528A34E2912B",
+    "earnedToken": "ezvVeSyncETH-USDC",
+    "earnedTokenAddress": "0xece2Cb584a3E5b1353AC1dF54F17f26A96F73c38",
+    "earnContractAddress": "0xece2Cb584a3E5b1353AC1dF54F17f26A96F73c38",
     "oracle": "lps",
     "oracleId": "vesync-usdc-weth",
     "status": "active",
@@ -93,7 +93,7 @@
     "addLiquidityUrl": "https://app.vesync.finance/liquidity/0x19dB1D963e2Ac810C48C8565bB2Fd2866745AA8A",
     "removeLiquidityUrl": "https://app.vesync.finance/liquidity/0x19dB1D963e2Ac810C48C8565bB2Fd2866745AA8A",
     "network": "zksync",
-    "createdAt": 1688599614
+    "createdAt": 1695638400
   },
   {
     "id": "vesync-busd-usdc",
