@@ -1,13 +1,13 @@
 import React, { memo } from 'react';
 import { Container, makeStyles } from '@material-ui/core';
-import { Filters } from './components/Filters';
-import { Portfolio } from './components/Portfolio';
+// import { Filters } from './components/Filters';
+// import { Portfolio } from './components/Portfolio';
 import { Loading } from './components/Loading';
 import { selectIsVaultListAvailable } from '../data/selectors/data-loader';
 import { styles } from './styles';
 import { Vaults } from './components/Vaults';
 import { useAppSelector } from '../../store';
-import { Banners } from './components/Banners';
+// import { Banners } from './components/Banners';
 
 const useStyles = makeStyles(styles);
 
@@ -22,11 +22,11 @@ export const Home = memo(function Home() {
   return (
     <>
       <div className={classes.top}>
-        <Banners />
-        <Portfolio />
+        {/* <Banners /> */}
+        {/* <Portfolio /> */}
       </div>
       <Container maxWidth="lg" className={classes.vaultContainer}>
-        <Filters />
+        {/* <Filters /> */}
         <Vaults />
       </Container>
     </>
