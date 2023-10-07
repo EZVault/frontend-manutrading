@@ -5,11 +5,11 @@ import { debounce } from 'lodash-es';
 import { useInView } from 'react-intersection-observer';
 import { Section } from '../../../../components/Section';
 import { styles } from './styles';
-import { Filter } from './components/Filter';
+// import { Filter } from './components/Filter';
 import { Vault } from './components/Vault';
-import { useSortedDashboardVaults } from './hook';
+// import { useSortedDashboardVaults } from './hook';
 import type { VaultEntity } from '../../../data/entities/vault';
-import { NoVaults } from './components/NoVaults';
+// import { NoVaults } from './components/NoVaults';
 import type { Theme } from '@material-ui/core';
 import { useMediaQuery } from '@material-ui/core';
 
@@ -22,14 +22,15 @@ export type UserVaultsProps = {
 export const UserVaults = memo<UserVaultsProps>(function UserVaults({ address }) {
   const { t } = useTranslation();
 
-  const {
-    sortedFilteredVaults,
-    sortedOptions,
-    handleSort,
-    handleSearchText,
-    searchText,
-    handleClearText,
-  } = useSortedDashboardVaults(address);
+  // const {
+  //   sortedFilteredVaults,
+  //   sortedOptions,
+  //   handleSort,
+  //   handleSearchText,
+  //   searchText,
+  //   handleClearText,
+  // } = useSortedDashboardVaults(address);
+  address;
 
   const mdDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'), { noSsr: true });
 
@@ -39,7 +40,7 @@ export const UserVaults = memo<UserVaultsProps>(function UserVaults({ address })
 
   return (
     <Section title={t('Dashboard-Your-Vaults-Title')} subTitle={t(subTitle)}>
-      <Filter
+      {/* <Filter
         sortOptions={sortedOptions}
         handleSort={handleSort}
         handleSearchText={handleSearchText}
@@ -47,7 +48,7 @@ export const UserVaults = memo<UserVaultsProps>(function UserVaults({ address })
         handleClearText={handleClearText}
       />
       {sortedFilteredVaults.length === 0 ? <NoVaults /> : null}
-      <VirtualList address={address} vaults={sortedFilteredVaults} />
+      <VirtualList address={address} vaults={sortedFilteredVaults} /> */}
     </Section>
   );
 });

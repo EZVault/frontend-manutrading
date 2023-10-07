@@ -6,7 +6,7 @@ import { selectAddressDepositedVaultIds } from '../data/selectors/balance';
 import { DepositSummary } from './components/DepositSummary';
 import { InvalidAddress, InvalidDomain, NoResults, NotConnected } from './components/NoResults';
 import { UserExposure } from './components/UserExposure';
-import { UserVaults } from './components/UserVaults';
+// import { UserVaults } from './components/UserVaults';
 import { styles } from './styles';
 import { useInitDashboard } from './hooks';
 import { Redirect, useParams } from 'react-router';
@@ -115,7 +115,7 @@ const DashboardForAddress = memo<DashboardForAddressProps>(function DashboardFor
       ) : userVaults.length > 0 ? (
         <>
           <UserExposure address={address} />
-          <UserVaults address={address} />
+          {/* <UserVaults address={address} /> */}
         </>
       ) : (
         <NoResults title={addressLabel || address} address={address} />
