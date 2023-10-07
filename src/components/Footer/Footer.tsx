@@ -81,16 +81,8 @@ export const Footer = memo(function Footer() {
 
   return (
     <div className={clsx(classes.footer, { [classes.userOnDashboard]: isOnDashboard })}>
+      <ul className={classes.nav}>powered by EZVault</ul>
       {/* <ul className={classes.nav}>
-        {navLinks.map(({ title, path }) => (
-          <li key={path} className={classes.navItem}>
-            <a href={path} target="_blank" rel="noopener" className={classes.navLink}>
-              {t(title)}
-            </a>
-          </li>
-        ))}
-      </ul>
-      <ul className={classes.nav}>
         {socialLinks.map(({ title, path, Icon }) => (
           <li key={path} className={classes.navItem}>
             <a

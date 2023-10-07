@@ -15,20 +15,20 @@ import { NavItem } from './components/NavItem';
 import { ReactComponent as VaultsIcon } from '../../images/icons/navigation/vault.svg';
 import { ReactComponent as DashboardIcon } from '../../images/icons/navigation/dashboard.svg';
 // import { ReactComponent as BridgeIcon } from '../../images/icons/navigation/bridge.svg';
-import { ReactComponent as BuyCryptoIcon } from '../../images/icons/navigation/buy-crypto.svg';
+// import { ReactComponent as BuyCryptoIcon } from '../../images/icons/navigation/buy-crypto.svg';
 // import { ReactComponent as DaoIcon } from '../../images/icons/navigation/dao.svg';
 // import { ReactComponent as ResourcesIcon } from '../../images/icons/navigation/resources.svg';
 // import { DaoNavItems, ResourcesNavItems } from './list';
 import { ConnectionStatus } from './components/ConnectionStatus';
 // import { DropNavItem } from './components/DropNavItem';
 import { MobileMenu } from './components/MobileMenu';
-import { BifiPrice } from './components/BifiPrice';
+// import { BifiPrice } from './components/BifiPrice';
 import { useAppDispatch, useAppSelector } from '../../store';
 import { selectShouldInitProposals } from '../../features/data/selectors/data-loader';
 import { fetchActiveProposals } from '../../features/data/actions/proposal';
 // import { UnreadProposalsDot } from './components/Badges/UnreadProposalsDot';
-import headerLogoMobile from '../../images/bifi-logos/header-logo-notext.svg';
-import headerLogoDesktop from '../../images/bifi-logos/header-logo.svg';
+import headerLogoMobile from '../../images/logos/ManuTrading_Logo.png';
+import headerLogoDesktop from '../../images/logos/ManuTrading_Logo.png';
 
 const useStyles = makeStyles(styles);
 export const Header = memo(function Header() {
@@ -77,11 +77,11 @@ export const Header = memo(function Header() {
               </Hidden>
             </div>
             <div className={classes.flex}>
-              <Hidden mdDown>
-                <NavItem title={'Header-BuyCrypto'} url="/onramp" Icon={BuyCryptoIcon} />
-                {/* <NavItem title={'Header-BridgeBifi'} url="/bridge" Icon={BridgeIcon} /> */}
-                <BifiPrice />
-              </Hidden>
+              {/* <Hidden mdDown> */}
+              {/* <NavItem title={'Header-BuyCrypto'} url="/onramp" Icon={BuyCryptoIcon} /> */}
+              {/* <NavItem title={'Header-BridgeBifi'} url="/bridge" Icon={BridgeIcon} /> */}
+              {/* <BifiPrice /> */}
+              {/* </Hidden> */}
               <ConnectionStatus />
               <Hidden lgUp>
                 <MobileMenu />

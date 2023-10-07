@@ -15,10 +15,10 @@ export const styles = (theme: Theme) => ({
     columnGap: theme.spacing(2),
   },
   hasPortfolio: {
-    backgroundColor: theme.palette.background.header,
+    backgroundColor: theme.palette.common.white,
   },
   userOnDashboard: {
-    backgroundColor: theme.palette.background.alternativeFooterHeader,
+    backgroundColor: theme.palette.common.white,
   },
   container: {
     paddingTop: '12px',

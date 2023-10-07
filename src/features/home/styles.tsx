@@ -7,5 +7,6 @@ export const styles = (theme: Theme) => ({
   vaultContainer: {
     paddingTop: '32px',
     paddingBottom: '32px',
+    // backgroundColor: theme.palette.common.white,
   },
 });

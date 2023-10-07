@@ -14,16 +14,17 @@ export const styles = (theme: Theme) => ({
     marginBottom: 'auto',
   },
   footer: {
-    background: theme.palette.background.footer,
+    background: theme.palette.common.white,
     padding: `${theme.spacing(5)}px`,
     display: 'flex',
     flexDirection: 'column' as const,
     alignItems: 'center',
   },
   userOnDashboard: {
-    backgroundColor: theme.palette.background.alternativeFooterHeader,
+    backgroundColor: theme.palette.common.white,
   },
   nav: {
+    color: 'black',
     display: 'flex',
     flexDirection: 'row' as const,
     flexWrap: 'wrap' as const,
