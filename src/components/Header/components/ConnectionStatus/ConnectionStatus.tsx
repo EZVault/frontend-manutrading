@@ -23,6 +23,7 @@ export const ConnectionStatus = memo(function ConnectionStatus() {
           <WalletContainer />
         </Suspense>
       </div>
+      {/* <img src="../../../images/logos/EZVaultBlack.png" alt="Logo"></img> */}
     </div>
   );
 });

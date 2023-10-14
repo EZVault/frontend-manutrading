@@ -13,13 +13,7 @@ export const TechLoader = memo<TechLoaderProps>(function TechLoader({ text }) {
   const classes = useStyles();
   return (
     <div className={classes.loader}>
-      <img
-        alt="Loading..."
-        className={classes.image}
-        src={loadingImage}
-        width={718 / 2}
-        height={718 / 2}
-      />
+      <img alt="Loading..." className={classes.image} src={loadingImage} width={500} height={200} />
       {text ? <div className={classes.text}>{text}</div> : null}
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { Container, makeStyles } from '@material-ui/core';
-// import { Filters } from './components/Filters';
+import { Filters } from './components/Filters';
 // import { Portfolio } from './components/Portfolio';
 import { Loading } from './components/Loading';
 import { selectIsVaultListAvailable } from '../data/selectors/data-loader';
@@ -26,7 +26,7 @@ export const Home = memo(function Home() {
         {/* <Portfolio /> */}
       </div>
       <Container maxWidth="lg" className={classes.vaultContainer}>
-        {/* <Filters /> */}
+        <Filters />
         <Vaults />
       </Container>
     </>
